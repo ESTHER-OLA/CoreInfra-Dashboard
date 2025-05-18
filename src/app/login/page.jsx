@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,18 +8,31 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Eye, EyeOff } from "lucide-react";
 import { CiUser, CiLock } from "react-icons/ci";
+import { useRouter } from "next/navigation";
 
-export function LoginForm({ onLogin }) {
+export default function LoginForm({ onLogin }) {
+  const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onLogin(username, password);
-  };
+   useEffect(() => {
+    const user = sessionStorage.getItem("username");
+    if (user) {
+      router.push("/dashboard");
+    }
+  }, []);
 
+    const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (username && password) {
+      sessionStorage.setItem("username", username);
+      router.push("/dashboard");
+    }
+  };
+  
   return (
     <div className="flex min-h-screen w-full bg-[url('/image.png')] bg-cover bg-center">
       <div className="flex w-full lg:w-1/2 flex-col gap-[9rem] px-18 py-12">

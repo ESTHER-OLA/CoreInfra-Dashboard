@@ -35,7 +35,7 @@ export function AppSidebar() {
 
   const handleLogout = () => {
     sessionStorage.removeItem("username");
-    window.location.reload();
+    window.location.href = "/login";
   };
 
   return (
@@ -115,7 +115,7 @@ export function AppSidebar() {
                       </div>
                     </details>
                   </SidebarMenuItem>
-                ) : (    
+                ) : (
                   // other items
                   <SidebarMenuItem key={item.name}>
                     <SidebarMenuButton asChild>
