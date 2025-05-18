@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💳 Transaction Dashboard UI
 
-## Getting Started
+A modern **Transaction Dashboard Frontend UI** built with **React** and **Tailwind CSS**, using **local data** to simulate transaction tracking. Designed for developers and product teams looking for a sleek, responsive financial dashboard interface.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📊 **Responsive Layout** – Fully mobile-friendly and adapts to all screen sizes.
+- 💼 **Transaction Summary UI** – Displays a clean table of transaction data using local mock data.
+- 🔍 **Search & Filter UI** – Built-in UI components to simulate search/filter functionality.
+- 🌙 **Modern Design** – Styled with Tailwind CSS for a clean, modern user experience.
+- ⚡ **No Backend Needed** – All transaction data is handled locally for quick testing and prototyping.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **React**
+- **Tailwind CSS**
+- **JavaScript / TypeScript** (based on your setup)
+- **Local JSON data**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Status
 
-## Learn More
+✅ **Frontend UI Completed**
+💡 **Uses Static Local Data (No API/backend integration)**
 
-To learn more about Next.js, take a look at the following resources:
+## 📷 Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> _(screenshot)_
